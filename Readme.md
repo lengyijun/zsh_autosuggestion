@@ -24,6 +24,8 @@ export ZSH_AUTOSUGGEST_STRATEGY=(nice $ZSH_AUTOSUGGEST_STRATEGY)
 
 ```
 # copy from  https://github.com/OskarSzafer/open-cli-copilot/
+previous_suggestion=""
+
  _update_postdisplay() {
      POSTDISPLAY="${suggestion#$BUFFER}"
      zle redisplay
