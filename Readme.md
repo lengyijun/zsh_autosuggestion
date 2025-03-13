@@ -31,7 +31,6 @@ export ZSH_AUTOSUGGEST_STRATEGY=(nice $ZSH_AUTOSUGGEST_STRATEGY)
  zle -N _update_postdisplay_widget _update_postdisplay
 
  TRAPALRM() {
-        #_zsh_autosuggest_strategy_my_custom_suggestion
         _zsh_autosuggest_strategy_nice
         if [[ -n "$suggestion" && "$suggestion" != "$previous_suggestion" ]]; then
                 zle _update_postdisplay_widget
